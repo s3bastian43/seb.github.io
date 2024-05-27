@@ -3,142 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#01579B" />
-    <meta name="msapplication-navbutton-color" content="#01579B" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="#01579B" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#01579B"/>
+    <meta name="msapplication-navbutton-color" content="#01579B"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="#01579B"/>
     <title>Seb's Portfolio</title>
 
-    <link href="js/roundSlider/roundslider.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" media="screen and (min-width: 1000px)" />
-    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1000px)" />
+    <link href="js/roundSlider/roundslider.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="style.css" media="screen and (min-width: 1000px)"/>
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width: 1000px)"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link type="text/css" href="js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet" media="screen and (max-width: 1000px)" />
-    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link type="text/css" href="js/jscrollpane/jquery.jscrollpane.css" rel="stylesheet"
+          media="screen and (max-width: 1000px)"/>
+    <link rel="stylesheet" href="js/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen"/>
 
-    <link rel="icon" type="image/png" href="images/logoo.png" />
+    <link rel="icon" type="image/png" href="images/logoo.png"/>
 
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', 'UA-96093366-1', 'auto');
-    ga('send', 'pageview');
+      ga('create', 'UA-96093366-1', 'auto');
+      ga('send', 'pageview');
 
     </script>
 
 </head>
 
 <body>
-    <div id="loader-wrapper">
+<div id="loader-wrapper">
     <div id="loader"></div>
- 
+
     <div class="loader-section section-left"></div>
     <div class="loader-section section-right"></div>
- </div>
-        <header>
-            <h1 class="title">SEB'S PORTFOLIO</h1>
+</div>
+<header>
+    <h1 class="title">SEB'S PORTFOLIO</h1>
 
-            <ul class="topnav" id="myTopnav">
-                <div class="menu">
+    <ul class="topnav" id="myTopnav">
+        <div class="menu">
 
-                    <li class="homeLi"><a href="#" class="active home">HOME</a></li>
-                    <li class="aboutLi"><a href="#" class="about">ABOUT ME</a></li>
-                    <li class="logo">  <img src="images/logo-blue.png"></li>
-                    <li class="projectsLi"><a href="#" class="projects">PROJECTS</a></li>
-                    <li class="contactLi"><a href="#" class="contact popup" data-svg-popup="popup">CONTACT</a></li>
-                    <ol class="iconMenu">
-                		  <div class="bars"></div>
-                    </ol>
+            <li class="homeLi"><a href="#" class="active home">HOME</a></li>
+            <li class="aboutLi"><a href="#" class="about">ABOUT ME</a></li>
+            <li class="logo"><img src="images/logo-blue.png"></li>
+            <li class="projectsLi"><a href="#" class="projects">PROJECTS</a></li>
+            <li class="contactLi"><a href="#" class="contact popup" data-svg-popup="popup">CONTACT</a></li>
+            <ol class="iconMenu">
+                <div class="bars"></div>
+            </ol>
 
-                </div>
-            </ul>
+        </div>
+    </ul>
 
-        </header>
+</header>
 <div class="content">
-        <div id="dialog">
-          <div class="mailsent" style="display: none;">
+    <div id="dialog">
+        <div class="mailsent" style="display: none;">
             <div class="envelope">
-              <i class="line line1"></i>
-              <i class="line line2"></i>
-              <i class="line line3"></i>
-              <i class="icon fa fa-envelope"></i>
-            </div>
-          </div>
-          <h1>Thank you!</h1>
-          <h3>Your message has been successfully sent. I will contact you very soon!</h3>
-          <a class="close" href="#"></a>
-          </div>
-
-        <div id="popup">
-            <div class="contact-box svg-popup-content">
-                <h1>Contact me</h1>
-                <hr>
-                <p>Drop me a message with anything that comes into your mind.
-                <br/>
-                I’m also available for freelance work and I’d want to hear about your projects.
-                </p>
-
-                <form action="contact.php" method="post">
-
-                    <div class="fields">
-                        <input type="text" name="name" required>
-                        <span class="bar"></span>
-                        <label>Name</label>
-                    </div>
-
-                    <div class="fields">
-                        <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);" value="">
-                        <span class="bar"></span>
-                        <label>Email</label>
-                    </div>
-
-                    <div class="fields">
-                        <input type="text" name="subject" required>
-                        <span class="bar"></span>
-                        <label>Subject</label>
-                    </div>
-
-                    <div class="fields-textarea">
-                        <textarea rows="9" cols="200" name="message" required></textarea>
-                        <span class="bar"></span>
-                        <label>Message</label>
-                    </div>
-
-                    <button type="submit" class="send-message"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send message</button>
-                </form>
+                <i class="line line1"></i>
+                <i class="line line2"></i>
+                <i class="line line3"></i>
+                <i class="icon fa fa-envelope"></i>
             </div>
         </div>
+        <h1>Thank you!</h1>
+        <h3>Your message has been successfully sent. I will contact you very soon!</h3>
+        <a class="close" href="#"></a>
+    </div> 
 
-        <div class="containerMe">
-            <div class="bio">
-                <div class="me-title">
-                    <i class="fa fa-id-badge" aria-hidden="true" style="font-size:2.5em;"></i>
-                    <h2>A piece about me</h2>
+    <div id="popup">
+        <div class="contact-box svg-popup-content">
+            <h1>Contact me</h1>
+            <hr>
+            <p>Drop me a message with anything that comes into your mind.
+                <br/>
+                I’m also available for freelance work, and I’d want to hear about your projects.
+            </p>
+
+            <form action="contact.php" method="post">
+
+                <div class="fields">
+                    <input type="text" name="name" required>
+                    <span class="bar"></span>
+                    <label>Name</label>
                 </div>
 
-                <div class="description">
-                    <div id="typed-strings" style="display:none;">
-                        <span>&ltp class="first-paragraph"&gt</span>
-                        <span>My name is Florin-Sebastian Cio</span>
-                        <span>I'm Seb, a</span>
-                        <p>
-                            I’m Sebastian, a web developer born in Romania, you know, that country that was ruled by Dracula and in which vampires existed? Well, we’re no longer sucking blood and some of us have moved into coding, me included. I’m passionate about it and I like
-                            to learn various ways of doing something faster, better and simpler.
-                            <br/> <br/> Being a bit lazy and becoming frustrated when I have to repeat an action, I try to make use of all the available resources that are in the huge world wide web and shrink my code making it as simple and logical as
-                            possible.
-                            <br/> <br/> When I’m not trying to develop my knowledge I’m growing my muscles in the gym in my attempt for a healthy life, I have to live forever, right?
-                            <img src="images/teeth.png" style=" width: 32px; height: 15px;">
-                        </p>
-                    </div>
-                    <span id="typed"></span>
+                <div class="fields">
+                    <input type="email" name="email" required onkeyup="this.setAttribute('value', this.value);"
+                           value="">
+                    <span class="bar"></span>
+                    <label>Email</label>
                 </div>
 
+                <div class="fields">
+                    <input type="text" name="subject" required>
+                    <span class="bar"></span>
+                    <label>Subject</label>
+                </div>
+
+                <div class="fields-textarea">
+                    <textarea rows="9" cols="200" name="message" required></textarea>
+                    <span class="bar"></span>
+                    <label>Message</label>
+                </div>
+
+                <button type="submit" class="send-message"><i class="fa fa-paper-plane" aria-hidden="true"></i>Send
+                    message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="containerMe">
+        <div class="bio">
+            <div class="me-title">
+                <i class="fa fa-id-badge" aria-hidden="true" style="font-size:2.5em;"></i>
+                <h2>A piece about me</h2>
             </div>
-            <div class="inner-container">
+
+            <div class="description">
+                <div id="typed-strings" style="display:none;">
+                    <span>&ltp class="first-paragraph"&gt</span>
+                    <span>My name is Florin-Sebastian Cio</span>
+                    <span>I'm Seb, a</span>
+                    <p>
+                        I’m Sebastian, a web developer born in Romania, you know, that country that was ruled by Dracula
+                        and in which vampires existed? Well, we’re no longer sucking blood and some of us have moved
+                        into coding, me included. I’m passionate about it and I like
+                        to learn various ways of doing something faster, better and simpler.
+                        <br/> <br/> Being a bit lazy and becoming frustrated when I have to repeat an action, I try to
+                        make use of all the available resources that are in the huge world wide web and shrink my code
+                        making it as simple and logical as
+                        possible.
+                        <br/> <br/> When I’m not trying to develop my knowledge I’m growing my muscles in the gym in my
+                        attempt for a healthy life, I have to live forever, right?
+                        <img src="images/teeth.png" style=" width: 32px; height: 15px;">
+                    </p>
+                </div>
+                <span id="typed"></span>
+            </div>
+
+        </div>
+        <div class="inner-container">
             <div class="me-title">
                 <i class="fa fa-cogs" aria-hidden="true" style="font-size:2.5em;"></i>
                 <h2>Skills</h2>
@@ -171,687 +187,816 @@
                 </div>
             </div>
             <div class="cv-content">
-            <div id="cv">
-                <a class="download" href="#format"></a>
-                <div class="format" id="format">
-                    <a data-fancybox-type="iframe" href="CV/CV Florin-Sebastian Ciobanu.pdf" data-os="pdf" download></a>
-                    <a href="CV/CV Florin-Sebastian Ciobanu.docx" data-os="docx"></a>
-                    <a class="close" href="#cv"></a>
+                <div id="cv">
+                    <a class="download" href="#format"></a>
+                    <div class="format" id="format">
+                        <a data-fancybox-type="iframe" href="CV/CV Florin-Sebastian Ciobanu.pdf" data-os="pdf"
+                           download></a>
+                        <a href="CV/CV Florin-Sebastian Ciobanu.docx" data-os="docx"></a>
+                        <a class="close" href="#cv"></a>
+                    </div>
                 </div>
-            </div>
-            </div>
             </div>
         </div>
-        <div class="containerRainforest">
+    </div>
+    <div class="containerRainforest">
 
-            <div class="project-description">
-                <h2 class="project-h2">About project</h2> The purpose of this project was to create a database driven website using PHP and MySQL, the products are listed for sale by multiple administrators and they can be filtered or searched by common users. The online shop, called "Rainforest",
-                also includes features such as:
-                <li>buying or reviewing a product</li>
-                <li>adding, editing or removing a product</li>
-                <li>adding, editing or removing a category/a subcategory</li>
-                <li>adding or removing an administrator</li>
-                <li>marking orders as shipped as an administrator</li>
-                <br/>The website is well-organised when it comes to code quality and file structure, and also, it presents a very customisable database which can be noticed live, on the website.
-            </div>
-            <div class="inner-container">
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2> The purpose of this project was to create a database driven
+            website using PHP and MySQL, the products are listed for sale by multiple administrators and they can be
+            filtered or searched by common users. The online shop, called "Rainforest",
+            also includes features such as:
+            <li>buying or reviewing a product</li>
+            <li>adding, editing or removing a product</li>
+            <li>adding, editing or removing a category/a subcategory</li>
+            <li>adding or removing an administrator</li>
+            <li>marking orders as shipped as an administrator</li>
+            <br/>The website is well-organised when it comes to code quality and file structure, and also, it presents a
+            very customisable database which can be noticed live, on the website.
+        </div>
+        <div class="inner-container">
             <div class="project-tech">
-            <div class="project-languages">
-                <h2 class="project-h2">Languages Used</h2>
-                <div class="languages" style="margin: 30px auto;">
+                <div class="project-languages">
+                    <h2 class="project-h2">Languages Used</h2>
+                    <div class="languages" style="margin: 30px auto;">
 
-                    <div class="php-rainforest"><span class="tooltiptext">PHP</span><span class="text">39%</span></div>
-                    <div class="html-rainforest"><span class="tooltiptext">HTML</span><span class="text">23%</span></div>
-                    <div class="css-rainforest"><span class="tooltiptext">CSS</span><span class="text">30%</span></div>
-                    <div class="jquery-rainforest"><span class="tooltiptext">JQUERY</span><span class="text">2%</span></div>
-                    <div class="mysql-rainforest"><span class="tooltiptext">MYSQL</span><span class="text">6%</span></div>
+                        <div class="php-rainforest"><span class="tooltiptext">PHP</span><span class="text">39%</span>
+                        </div>
+                        <div class="html-rainforest"><span class="tooltiptext">HTML</span><span class="text">23%</span>
+                        </div>
+                        <div class="css-rainforest"><span class="tooltiptext">CSS</span><span class="text">30%</span>
+                        </div>
+                        <div class="jquery-rainforest"><span class="tooltiptext">JQUERY</span><span
+                                class="text">2%</span></div>
+                        <div class="mysql-rainforest"><span class="tooltiptext">MYSQL</span><span class="text">6%</span>
+                        </div>
 
+                    </div>
                 </div>
-            </div>
-            <div class="project-tools">
-                <h2 class="project-h2">Other tools used</h2>
-                <div class="dashed-icon-wrap-2 dashed-icon-effect-4 dashed-icon-effect-4b">
-                    <div class="dashed-icon dashed-icon-psd"><span class="tooltiptext" style="margin-top:-140px;">PHOTOSHOP</span></div>
-                    <div class="dashed-icon dashed-icon-ai"><span class="tooltiptext" style="margin-top:-140px;">ILLUSTRATOR</span></div>
-                    <div class="dashed-icon dashed-icon-mysql-workbench"><span class="tooltiptext" style="margin-top:-155px;">MYSQL WORKBENCH</span></div>
+                <div class="project-tools">
+                    <h2 class="project-h2">Other tools used</h2>
+                    <div class="dashed-icon-wrap-2 dashed-icon-effect-4 dashed-icon-effect-4b">
+                        <div class="dashed-icon dashed-icon-psd"><span class="tooltiptext" style="margin-top:-140px;">PHOTOSHOP</span>
+                        </div>
+                        <div class="dashed-icon dashed-icon-ai"><span class="tooltiptext" style="margin-top:-140px;">ILLUSTRATOR</span>
+                        </div>
+                        <div class="dashed-icon dashed-icon-mysql-workbench"><span class="tooltiptext"
+                                                                                   style="margin-top:-155px;">MYSQL WORKBENCH</span>
+                        </div>
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="wrapper">
             </div>
             <div class="project-gallery">
 
                 <a class="rainforest-gallery" caption="Rainforest Home Page" rel="group" href="images/rainforest1.jpg">
-                    <img src="images/rainforest1.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest1.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="rainforest-gallery" caption="Login Form" rel="group" href="images/rainforest2.jpg">
-                    <img src="images/rainforest2.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest2.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="rainforest-gallery" caption="Sign up Form" rel="group" href="images/rainforest3.jpg">
-                    <img src="images/rainforest3.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest3.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="rainforest-gallery" caption="Search Page" rel="group" href="images/rainforest4.jpg">
-                    <img src="images/rainforest4.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest4.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="rainforest-gallery" caption="Basket" rel="group" href="images/rainforest5.jpg">
-                    <img src="images/rainforest5.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest5.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="rainforest-gallery" caption="User Profile Page" rel="group" href="images/rainforest6.jpg">
-                    <img src="images/rainforest6.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/rainforest6.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
             </div>
-            </div>
+        </div>
 
-</div>
-        <div class="containerCards">
+    </div>
+    <div class="containerCards">
 
-            <div class="project-description">
-                <h2 class="project-h2">About project</h2>
-Replicating the card game Blackjack (or 21) represented a serious challenge for me, as a basic JavaScript developer at that time.
-However, the game was built successfully and it's not offering a repetitive experience as various algorithms were used to create unique rounds. The opponent (A.I.) doesn't have a pre-defined algorithm and it's changing his stick choice value after each hand.
-<br />The user doesn't have many choices at the start of the game, he is either able to change the default bet or to start the game by pressing the "Hit" button, when the first two cards are inserted the In the moment the total of £200 is reached, the game will stop and the page will be reloaded.
-            </div>
-            <div class="inner-container">
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2>
+            Replicating the card game Blackjack (or 21) represented a serious challenge for me, as a basic JavaScript
+            developer at that time.
+            However, the game was built successfully and it's not offering a repetitive experience as various algorithms
+            were used to create unique rounds. The opponent (A.I.) doesn't have a pre-defined algorithm and it's
+            changing his stick choice value after each hand.
+            <br/>The user doesn't have many choices at the start of the game, he is either able to change the default
+            bet or to start the game by pressing the "Hit" button, when the first two cards are inserted the In the
+            moment the total of £200 is reached, the game will stop and the page will be reloaded.
+        </div>
+        <div class="inner-container">
             <div class="project-tech">
-            <div class="project-languages" style="margin: 80px 0px 10px 0;">
-                <h2 class="project-h2">Languages Used</h2>
-                <div class="languages" style="margin: 30px auto;">
+                <div class="project-languages" style="margin: 80px 0px 10px 0;">
+                    <h2 class="project-h2">Languages Used</h2>
+                    <div class="languages" style="margin: 30px auto;">
 
-                    <div class="html-blackjack"><span class="tooltiptext">HTML</span><span class="text">6%</span></div>
-                    <div class="css-blackjack"><span class="tooltiptext">CSS</span><span class="text">16%</span></div>
-                    <div class="js-blackjack"><span class="tooltiptext" style="width:100px; margin-left: -27px;">JAVASCRIPT</span><span class="text">78%</span></div>
+                        <div class="html-blackjack"><span class="tooltiptext">HTML</span><span class="text">6%</span>
+                        </div>
+                        <div class="css-blackjack"><span class="tooltiptext">CSS</span><span class="text">16%</span>
+                        </div>
+                        <div class="js-blackjack"><span class="tooltiptext" style="width:100px; margin-left: -27px;">JAVASCRIPT</span><span
+                                class="text">78%</span></div>
 
+                    </div>
                 </div>
-            </div>
             </div>
             <div class="wrapper">
             </div>
             <div class="project-gallery">
 
                 <a class="blackjack-gallery" caption="Initial Status" rel="group" href="images/blackjack1.jpg">
-                    <img src="images/blackjack1.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/blackjack1.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="blackjack-gallery" caption="A Draw" rel="group" href="images/blackjack2.jpg">
-                    <img src="images/blackjack2.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/blackjack2.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="blackjack-gallery" caption="Game Rules" rel="group" href="images/blackjack3.jpg">
-                    <img src="images/blackjack3.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/blackjack3.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
                 <a class="blackjack-gallery" caption="A Lost Hand" rel="group" href="images/blackjack4.jpg">
-                    <img src="images/blackjack4.jpg" alt="" width="250px" height="150px" />
+                    <img src="images/blackjack4.jpg" alt="" width="250px" height="150px"/>
                     <span class="text-content">Click to Expand</span>
                 </a>
 
             </div>
-              </div>
         </div>
+    </div>
 
-        <div class="containerCar">
-          <div class="project-description">
-              <h2 class="project-h2">About project</h2> 
-              
-In order to build the application several Java elements like JLabels, JButtons, JTextFields, JMenuItems or Arrays were used.
-<br />To create the interface in which the car navigates, a loop was used to create two hundred and eight buttons that represent a grid, a grid that becomes a maze by using a one-dimensional array and five methods that represent the worlds, in each world the car will get a different icon as well as the compass. The purpose of the game is to get the car from one place to another by pressing a button, making it navigate through the maze at a speed defined by a slider. Numerous if and else statements were used to apply conditions and to check every step of the car that moves one block at a time.  The car can’t go through walls and dialog message boxes are displayed on the screen if the user tries to do so. 
-<br />A second option was developed using a different dimensional array, in this way five different worlds were implemented, the code checks if the "Option 2" button was pressed and change the maze if the Boolean variable is false. The second world presents obstacles as kids and the car has a different routine for completing a lap.
-          </div>
-            <div class="inner-container">
+    <div class="containerCar">
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2>
+
+            In order to build the application several Java elements like JLabels, JButtons, JTextFields, JMenuItems or
+            Arrays were used.
+            <br/>To create the interface in which the car navigates, a loop was used to create two hundred and eight
+            buttons that represent a grid, a grid that becomes a maze by using a one-dimensional array and five methods
+            that represent the worlds, in each world the car will get a different icon as well as the compass. The
+            purpose of the game is to get the car from one place to another by pressing a button, making it navigate
+            through the maze at a speed defined by a slider. Numerous if and else statements were used to apply
+            conditions and to check every step of the car that moves one block at a time. The car can’t go through walls
+            and dialog message boxes are displayed on the screen if the user tries to do so.
+            <br/>A second option was developed using a different dimensional array, in this way five different worlds
+            were implemented, the code checks if the "Option 2" button was pressed and change the maze if the Boolean
+            variable is false. The second world presents obstacles as kids and the car has a different routine for
+            completing a lap.
+        </div>
+        <div class="inner-container">
             <div class="project-tech">
-            <div class="project-languages" style="margin: 80px 0px 10px 0;">
-              <h2 class="project-h2">Languages Used</h2>
-              <div class="languages" style="margin: 30px auto;">
-                <div class="java-carcrash"><span class="tooltiptext">JAVA</span><span class="text" style="left:12px; bottom:-5px;">100%</span></div>
-              </div>
-          </div>
-            </div>
-          <div class="wrapper">
-          </div>
-          <div class="project-gallery">
-
-              <a class="carcrash-gallery" caption="Expected Final Project" rel="group" href="images/carcrash1.jpg">
-                  <img src="images/carcrash1.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="carcrash-gallery" caption="Delivered Final Project (World 1)" rel="group" href="images/carcrash2.jpg">
-                  <img src="images/carcrash2.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="carcrash-gallery" caption="Pressing the Option 2 Button (World 2)" rel="group" href="images/carcrash3.jpg">
-                  <img src="images/carcrash3.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="carcrash-gallery" caption="Error Displaying" rel="group" href="images/carcrash4.jpg">
-                  <img src="images/carcrash4.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-              <a class="carcrash-gallery" caption="About the Author Popup" rel="group" href="images/carcrash5.jpg">
-                  <img src="images/carcrash5.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-          </div>
-            </div>
-        </div>
-        <div class="containerZoo">
-          <div class="project-description">
-              <h2 class="project-h2">About project</h2> 
-              Claybrook Zoo represented a complex group project for the reason that it required working with 10 designers and developers.
-<br />The fictive clients required a new redesigned system for their zoo, in order to ease their workload and eliminate the current paper-based approach.
-<br />The deliverables consisted of sketches and wireframes for the various features that would've been implemented. 
-<br />My main role within the project was to find a solution for displaying each animal information for the visitors, after various studies and researching my solution was to install interactive Kiosks and create an appropriate interface for them.
-              </div>
-                  <div class="inner-container">
-            <div class="project-tech">
-            
-            <div class="project-tools" style="margin: 80px 0px 10px 0;">
-                <h2 class="project-h2">Tools Used</h2>
-                <div class="dashed-icon-wrap-2 dashed-icon-effect-4 dashed-icon-effect-4b">
-                    <div class="dashed-icon dashed-icon-psd"><span class="tooltiptext" style="margin-top:-140px;">PHOTOSHOP</span></div>
-                </div>
-            </div>
-            </div>
-          <div class="wrapper">
-          </div>
-          <div class="project-gallery">
-
-              <a class="zoo-gallery" caption="Animal Home Screen" rel="group" href="images/zoo1.jpg">
-                  <img src="images/zoo1.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="zoo-gallery" caption="'Find Out More' Page" rel="group" href="images/zoo2.jpg">
-                  <img src="images/zoo2.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="zoo-gallery" caption="General Screen" rel="group" href="images/zoo3.jpg">
-                  <img src="images/zoo3.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="zoo-gallery" caption="Sponsor Details" rel="group" href="images/zoo4.jpg">
-                  <img src="images/zoo4.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-          </div>
-                  </div>
-        </div>
-        <div class="containerHelmdon">
-
-          <div class="project-description">
-              <h2 class="project-h2">About project</h2>
-              Helmdon Parish Council it's an ongoing project which requires working with a real client through the process of redesigning their Parish Council website.
-<br />Client requests are numerous and are implying different features such as creating a facebook feed, adding an events calendar or including different privileges for new members.
-<br />My roles within the team, among others, are to manage the project, compile and format the documentation, coordinate the technical activities, setting up the new WordPress site, create the style tiles, implement different features and test the website for a good usability and accessibility.  
-</div>
-            <div class="inner-container">
-            <div class="project-tech">
-          <div class="project-languages">
-              <h2 class="project-h2">Group Members</h2>
-                <div class="team" style="margin: 30px auto;">
-                    <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank" title="Andrei's Linkedin">
-                        <img src="images/andrei.jpg">
-                        <span class="tooltiptext">ANDREI</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank" title="Simone's Linkedin">
-                        <img src="images/simone.jpg">
-                        <span class="tooltiptext">SIMONE</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank" title="Marcus's Linkedin">
-                        <img src="images/marcus.jpg">
-                        <span class="tooltiptext">MARCUS</span>
-                    </a>
-                </div>
-          </div>
-          <div class="project-tools">
-              <h2 class="project-h2">Tools Used</h2>
-              <div class="languages" style="margin: 30px auto;">
-                  <div class="wordpress-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">WORDPRESS</span><span class="text">90%</span></div>
-                  <div class="psd-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span class="text">6%</span></div>
-                  <div class="ai-helmdon"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span class="text">4%</span></div>
-              </div>
-
-          </div>
-            </div>
-          <div class="wrapper">
-          </div>
-          <div class="project-gallery">
-
-              <a class="helmdon-gallery" caption="helmdon Home Page" rel="group" href="images/helmdon1.jpg">
-                  <img src="images/helmdon1.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="helmdon-gallery" caption="Login Form" rel="group" href="images/helmdon2.jpg">
-                  <img src="images/helmdon2.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="helmdon-gallery" caption="Sign up Form" rel="group" href="images/helmdon3.jpg">
-                  <img src="images/helmdon3.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="helmdon-gallery" caption="Search Page" rel="group" href="images/helmdon4.jpg">
-                  <img src="images/helmdon4.jpg" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="helmdon-gallery" caption="Basket" rel="group" href="images/helmdon5.JPG">
-                  <img src="images/helmdon5.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-          </div>
-            </div>
-        </div>
-        <div class="containerVLE">
-          <div class="project-description">
-              <h2 class="project-h2">About project</h2> 
-            In order to bring VLE to life, we, as a team of four, had to establish the requirements of the task and based on that, deliver our solution which consisted of creating a new and innovative type of lecture, a Virtual Classroom, in which students can attend within their home comfort.
-            <br />Various design techniques were approached to ensure that our system would deliver a great user experience for both the students and the lecturers, in this way sketches, wireframes, style tiles, questionnaires, personas and tests were implemented and created.
-             </div>
-                               <div class="inner-container">
-            <div class="project-tech">
-          <div class="project-languages">
-              <h2 class="project-h2">Group Members</h2>
-                <div class="team" style="margin: 30px auto;">
-                    <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank" title="Andrei's Linkedin">
-                        <img src="images/andrei.jpg">
-                        <span class="tooltiptext">ANDREI</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank" title="Simone's Linkedin">
-                        <img src="images/simone.jpg">
-                        <span class="tooltiptext">SIMONE</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank" title="Marcus's Linkedin">
-                        <img src="images/marcus.jpg">
-                        <span class="tooltiptext">MARCUS</span>
-                    </a>
-                </div>
-          </div>
-          <div class="project-tools">
-              <h2 class="project-h2">Tools Used</h2>
-              <div class="languages" style="margin: 30px auto;">
-                <div class="justinmind-vle"><span class="tooltiptext" style="width:140px; margin-left: -47px; margin-top: -62px;">JUSTINMIND PROTOTYPER</span><span class="text">90%</span></div>
-                                         <div class="balsamiq-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">BALSAMIQ</span><span class="text">15%</span></div>
-
-                <div class="psd-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span class="text">6%</span></div>
-                <div class="ai-vle"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span class="text">4%</span></div>
-            </div>
-
-          </div>
-            </div>
-          <div class="wrapper">
-          </div>
-          <div class="project-gallery">
-
-              <a class="vle-gallery" caption="vle Home Page" rel="group" href="images/vle1.JPG">
-                  <img src="images/vle1.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="vle-gallery" caption="Login Form" rel="group" href="images/vle2.JPG">
-                  <img src="images/vle2.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="vle-gallery" caption="Sign up Form" rel="group" href="images/vle3.JPG">
-                  <img src="images/vle3.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="vle-gallery" caption="Search Page" rel="group" href="images/vle4.JPG">
-                  <img src="images/vle4.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="vle-gallery" caption="Basket" rel="group" href="images/vle5.JPG">
-                  <img src="images/vle5-min.png" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-
-              <a class="vle-gallery" caption="User Profile Page" rel="group" href="images/vle6.JPG">
-                  <img src="images/vle6.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-              <a class="vle-gallery" caption="User Profile Page" rel="group" href="images/vle7.JPG">
-                  <img src="images/vle7.JPG" alt="" width="250px" height="150px" />
-                  <span class="text-content">Click to Expand</span>
-              </a>
-          </div>
-                               </div>
-        </div>
-        <i class="fa fa-th allProjButton" aria-hidden="true" style="font-size: 3rem; display: none;"><span class="tooltiptext">VIEW ALL PROJECTS</span></i>
-        <div class="main">
-
-
-
-
-            <div class="container" id="me">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/meCover.png">
+                <div class="project-languages" style="margin: 80px 0px 10px 0;">
+                    <h2 class="project-h2">Languages Used</h2>
+                    <div class="languages" style="margin: 30px auto;">
+                        <div class="java-carcrash"><span class="tooltiptext">JAVA</span><span class="text"
+                                                                                              style="left:12px; bottom:-5px;">100%</span>
                         </div>
-                        <div class="iconCover">
-                            <img src="images/logo.png">
-                        </div>
-                        <h2 class="project-title" style="color: #01579B">Who am I?</h2>
-                        <hr>
-                        <div class="small-description" style="margin-top: 15px;">
-Full name's Florin-Sebastian Ciobanu, friends call me Seb. I come from a small Romanian town which was lacking in web developers a few years ago, it was then when I decided that they would need a skilled one, so, I started to chase my dream.
-                        </div>
-                        <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
                     </div>
-                    <div class="back">
-                        <img src="images/portrait.png" class="gridLogo">
-                        <p>This is me...</p>
-                        <p>a bit photoshopped</p>
-                        <hr>
+                </div>
+            </div>
+            <div class="wrapper">
+            </div>
+            <div class="project-gallery">
+
+                <a class="carcrash-gallery" caption="Expected Final Project" rel="group" href="images/carcrash1.jpg">
+                    <img src="images/carcrash1.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="carcrash-gallery" caption="Delivered Final Project (World 1)" rel="group"
+                   href="images/carcrash2.jpg">
+                    <img src="images/carcrash2.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="carcrash-gallery" caption="Pressing the Option 2 Button (World 2)" rel="group"
+                   href="images/carcrash3.jpg">
+                    <img src="images/carcrash3.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="carcrash-gallery" caption="Error Displaying" rel="group" href="images/carcrash4.jpg">
+                    <img src="images/carcrash4.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+                <a class="carcrash-gallery" caption="About the Author Popup" rel="group" href="images/carcrash5.jpg">
+                    <img src="images/carcrash5.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="containerZoo">
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2>
+            Claybrook Zoo represented a complex group project for the reason that it required working with 10 designers
+            and developers.
+            <br/>The fictive clients required a new redesigned system for their zoo, in order to ease their workload and
+            eliminate the current paper-based approach.
+            <br/>The deliverables consisted of sketches and wireframes for the various features that would've been
+            implemented.
+            <br/>My main role within the project was to find a solution for displaying each animal information for the
+            visitors, after various studies and researching my solution was to install interactive Kiosks and create an
+            appropriate interface for them.
+        </div>
+        <div class="inner-container">
+            <div class="project-tech">
+
+                <div class="project-tools" style="margin: 80px 0px 10px 0;">
+                    <h2 class="project-h2">Tools Used</h2>
+                    <div class="dashed-icon-wrap-2 dashed-icon-effect-4 dashed-icon-effect-4b">
+                        <div class="dashed-icon dashed-icon-psd"><span class="tooltiptext" style="margin-top:-140px;">PHOTOSHOP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="wrapper">
+            </div>
+            <div class="project-gallery">
+
+                <a class="zoo-gallery" caption="Animal Home Screen" rel="group" href="images/zoo1.jpg">
+                    <img src="images/zoo1.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="zoo-gallery" caption="'Find Out More' Page" rel="group" href="images/zoo2.jpg">
+                    <img src="images/zoo2.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="zoo-gallery" caption="General Screen" rel="group" href="images/zoo3.jpg">
+                    <img src="images/zoo3.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="zoo-gallery" caption="Sponsor Details" rel="group" href="images/zoo4.jpg">
+                    <img src="images/zoo4.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="containerHelmdon">
+
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2>
+            Helmdon Parish Council it's an ongoing project which requires working with a real client through the process
+            of redesigning their Parish Council website.
+            <br/>Client requests are numerous and are implying different features such as creating a facebook feed,
+            adding an events calendar or including different privileges for new members.
+            <br/>My roles within the team, among others, are to manage the project, compile and format the
+            documentation, coordinate the technical activities, setting up the new WordPress site, create the style
+            tiles, implement different features and test the website for a good usability and accessibility.
+        </div>
+        <div class="inner-container">
+            <div class="project-tech">
+                <div class="project-languages">
+                    <h2 class="project-h2">Group Members</h2>
+                    <div class="team" style="margin: 30px auto;">
+                        <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank"
+                           title="Andrei's Linkedin">
+                            <img src="images/andrei.jpg">
+                            <span class="tooltiptext">ANDREI</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank"
+                           title="Simone's Linkedin">
+                            <img src="images/simone.jpg">
+                            <span class="tooltiptext">SIMONE</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank"
+                           title="Marcus's Linkedin">
+                            <img src="images/marcus.jpg">
+                            <span class="tooltiptext">MARCUS</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-tools">
+                    <h2 class="project-h2">Tools Used</h2>
+                    <div class="languages" style="margin: 30px auto;">
+                        <div class="wordpress-helmdon"><span class="tooltiptext"
+                                                             style="width:100px; margin-left: -27px;">WORDPRESS</span><span
+                                class="text">90%</span></div>
+                        <div class="psd-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span
+                                class="text">6%</span></div>
+                        <div class="ai-helmdon"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span
+                                class="text">4%</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+            </div>
+            <div class="project-gallery">
+
+                <a class="helmdon-gallery" caption="helmdon Home Page" rel="group" href="images/helmdon1.jpg">
+                    <img src="images/helmdon1.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="helmdon-gallery" caption="Login Form" rel="group" href="images/helmdon2.jpg">
+                    <img src="images/helmdon2.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="helmdon-gallery" caption="Sign up Form" rel="group" href="images/helmdon3.jpg">
+                    <img src="images/helmdon3.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="helmdon-gallery" caption="Search Page" rel="group" href="images/helmdon4.jpg">
+                    <img src="images/helmdon4.jpg" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="helmdon-gallery" caption="Basket" rel="group" href="images/helmdon5.JPG">
+                    <img src="images/helmdon5.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+            </div>
+        </div>
+    </div>
+    <div class="containerVLE">
+        <div class="project-description">
+            <h2 class="project-h2">About project</h2>
+            In order to bring VLE to life, we, as a team of four, had to establish the requirements of the task and
+            based on that, deliver our solution which consisted of creating a new and innovative type of lecture, a
+            Virtual Classroom, in which students can attend within their home comfort.
+            <br/>Various design techniques were approached to ensure that our system would deliver a great user
+            experience for both the students and the lecturers, in this way sketches, wireframes, style tiles,
+            questionnaires, personas and tests were implemented and created.
+        </div>
+        <div class="inner-container">
+            <div class="project-tech">
+                <div class="project-languages">
+                    <h2 class="project-h2">Group Members</h2>
+                    <div class="team" style="margin: 30px auto;">
+                        <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank"
+                           title="Andrei's Linkedin">
+                            <img src="images/andrei.jpg">
+                            <span class="tooltiptext">ANDREI</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank"
+                           title="Simone's Linkedin">
+                            <img src="images/simone.jpg">
+                            <span class="tooltiptext">SIMONE</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank"
+                           title="Marcus's Linkedin">
+                            <img src="images/marcus.jpg">
+                            <span class="tooltiptext">MARCUS</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-tools">
+                    <h2 class="project-h2">Tools Used</h2>
+                    <div class="languages" style="margin: 30px auto;">
+                        <div class="justinmind-vle"><span class="tooltiptext"
+                                                          style="width:140px; margin-left: -47px; margin-top: -62px;">JUSTINMIND PROTOTYPER</span><span
+                                class="text">90%</span></div>
+                        <div class="balsamiq-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">BALSAMIQ</span><span
+                                class="text">15%</span></div>
+
+                        <div class="psd-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span
+                                class="text">6%</span></div>
+                        <div class="ai-vle"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span
+                                class="text">4%</span></div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="wrapper">
+            </div>
+            <div class="project-gallery">
+
+                <a class="vle-gallery" caption="vle Home Page" rel="group" href="images/vle1.JPG">
+                    <img src="images/vle1.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="vle-gallery" caption="Login Form" rel="group" href="images/vle2.JPG">
+                    <img src="images/vle2.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="vle-gallery" caption="Sign up Form" rel="group" href="images/vle3.JPG">
+                    <img src="images/vle3.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="vle-gallery" caption="Search Page" rel="group" href="images/vle4.JPG">
+                    <img src="images/vle4.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="vle-gallery" caption="Basket" rel="group" href="images/vle5.JPG">
+                    <img src="images/vle5-min.png" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+
+                <a class="vle-gallery" caption="User Profile Page" rel="group" href="images/vle6.JPG">
+                    <img src="images/vle6.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+                <a class="vle-gallery" caption="User Profile Page" rel="group" href="images/vle7.JPG">
+                    <img src="images/vle7.JPG" alt="" width="250px" height="150px"/>
+                    <span class="text-content">Click to Expand</span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <i class="fa fa-th allProjButton" aria-hidden="true" style="font-size: 3rem; display: none;"><span
+            class="tooltiptext">VIEW ALL PROJECTS</span></i>
+    <div class="main">
 
 
-                        <ul class="rolldown-list" id="myList">
-                          <h4>And in my porfolio site you will find:</h4>
+        <div class="container" id="me">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/meCover.png">
+                    </div>
+                    <div class="iconCover">
+                        <img src="images/logo.png">
+                    </div>
+                    <h2 class="project-title" style="color: #01579B">Who am I?</h2>
+                    <hr>
+                    <div class="small-description" style="margin-top: 15px;">
+                        Full name's Florin-Sebastian Ciobanu, friends call me Seb. I come from a small Romanian town
+                        which was lacking in web developers a few years ago, it was then when I decided that they would
+                        need a skilled one, so, I started to chase my dream.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+                    <img src="images/portrait.png" class="gridLogo">
+                    <p>This is me...</p>
+                    <p>a bit photoshopped</p>
+                    <hr>
+
+
+                    <ul class="rolldown-list" id="myList">
+                        <h4>And in my porfolio site you will find:</h4>
                         <li><i class="fa fa-male" aria-hidden="true"></i>A brief descrpition about me</li>
                         <li><i class="fa fa-file-text" aria-hidden="true"></i>My CV</li>
                         <li><i class="fa fa-th" aria-hidden="true"></i>My projects</li>
                         <li><i class="fa fa-paper-plane" aria-hidden="true"></i>A contact form</li>
                         <li><i class="fa fa-share-alt-square" aria-hidden="true"></i>Social media links</li>
-                        </ul>
-                      <h3>Thank you for visiting!</h3>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="container" id="small-rainforest">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/rainforestCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/rainforest.png">
-                        </div>
-                        <h2 class="project-title" style="color: #33691E">Rainforest Online Shop</h2>
-                        <hr>
-                        <div class="small-description">
-                        Rainforest is an eCommerce website, based mainly on PHP and MySQL, it integrates various features and functions which are giving the website a high-detailed online shop interface.                        </div>
-                        <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
-                    </div>
-                    <div class="back">
-                        <h3>Languages Used</h3>
-                        <hr>
-                        <div class="languages">
-
-                            <div class="php-rainforest"><span class="tooltiptext">PHP</span><span class="text">39%</span></div>
-                            <div class="html-rainforest"><span class="tooltiptext">HTML</span><span class="text">23%</span></div>
-                            <div class="css-rainforest"><span class="tooltiptext">CSS</span><span class="text">30%</span></div>
-                            <div class="jquery-rainforest"><span class="tooltiptext">JQUERY</span><span class="text">2%</span></div>
-                            <div class="mysql-rainforest"><span class="tooltiptext">MYSQL</span><span class="text">6%</span></div>
-
-                        </div>
-                        <div class="measurement">
-                            <h3>Project complexity</h3>
-                            <hr>
-                            <div class="complexity">
-                                <div id="progressBar-rainforest" class="progressBar"><div></div></div>
-                            </div>
-                        </div>
-                        <button class="view-project" id="rainforest-button">View project</button>
-                    </div>
+                    </ul>
+                    <h3>Thank you for visiting!</h3>
                 </div>
             </div>
 
-            <div class="container" id="small-carcrash">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/carCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/car.png">
-                        </div>
-                        <h2 class="project-title" style="color: #B71C1C">Car Crash Application</h2>
-                        <hr>
-                        <div class="small-description">
-                      CCarCrash is a Java application created using the Eclipse software, the game main purpose is to produce a world in which a car navigates through a built-up maze.                          </div>
-                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
+        </div>
+
+        <div class="container" id="small-rainforest">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/rainforestCover.png">
                     </div>
-                    <div class="back">
-                        <h3>Languages Used</h3>
-                        <hr>
-                        <div class="languages">
-                            <div class="java-carcrash"><span class="tooltiptext">JAVA</span><span class="text" style="left:12px; bottom:-5px;">100%</span></div>
+                    <div class="iconCover">
+                        <img src="images/rainforest.png">
+                    </div>
+                    <h2 class="project-title" style="color: #33691E">Rainforest Online Shop</h2>
+                    <hr>
+                    <div class="small-description">
+                        Rainforest is an eCommerce website, based mainly on PHP and MySQL, it integrates various
+                        features and functions which are giving the website a high-detailed online shop interface.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+                    <h3>Languages Used</h3>
+                    <hr>
+                    <div class="languages">
+
+                        <div class="php-rainforest"><span class="tooltiptext">PHP</span><span class="text">39%</span>
                         </div>
-                        <div class="measurement">
-                            <h3>Project complexity</h3>
-                            <hr>
-                            <div class="complexity">
-                                <div id="progressBar-car" class="progressBar"><div></div></div>
+                        <div class="html-rainforest"><span class="tooltiptext">HTML</span><span class="text">23%</span>
+                        </div>
+                        <div class="css-rainforest"><span class="tooltiptext">CSS</span><span class="text">30%</span>
+                        </div>
+                        <div class="jquery-rainforest"><span class="tooltiptext">JQUERY</span><span
+                                class="text">2%</span></div>
+                        <div class="mysql-rainforest"><span class="tooltiptext">MYSQL</span><span class="text">6%</span>
+                        </div>
+
+                    </div>
+                    <div class="measurement">
+                        <h3>Project complexity</h3>
+                        <hr>
+                        <div class="complexity">
+                            <div id="progressBar-rainforest" class="progressBar">
+                                <div></div>
                             </div>
                         </div>
-                        <button class="view-project" id="carcrash-button">View project</button>
                     </div>
+                    <button class="view-project" id="rainforest-button">View project</button>
                 </div>
             </div>
         </div>
 
-        <div class="main" style="margin-bottom:100px;">
-
-            <div class="container" id="small-blackjack">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/blackjackCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/blackjack.png">
-                        </div>
-                        <h2 class="project-title" style="color: #1B5E20">Blackjack Game</h2>
-                        <hr>
-                        <div class="small-description">
-The purpose of the project was to create an interactive web page that replicates the Blackjack game (or 21), the user plays versus the dealer and has the option of placing a bet before each hand.                        </div>
-    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
+        <div class="container" id="small-carcrash">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/carCover.png">
                     </div>
-                    <div class="back">
-                        <h3>Languages Used</h3>
-                        <hr>
-                        <div class="languages">
-
-                            <div class="html-blackjack"><span class="tooltiptext">HTML</span><span class="text">6%</span></div>
-                            <div class="css-blackjack"><span class="tooltiptext">CSS</span><span class="text">16%</span></div>
-                            <div class="js-blackjack"><span class="tooltiptext" style="width:100px; margin-left: -27px;">JAVASCRIPT</span><span class="text">78%</span></div>
-
+                    <div class="iconCover">
+                        <img src="images/car.png">
+                    </div>
+                    <h2 class="project-title" style="color: #B71C1C">Car Crash Application</h2>
+                    <hr>
+                    <div class="small-description">
+                        CCarCrash is a Java application created using the Eclipse software, the game main purpose is to
+                        produce a world in which a car navigates through a built-up maze.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+                    <h3>Languages Used</h3>
+                    <hr>
+                    <div class="languages">
+                        <div class="java-carcrash"><span class="tooltiptext">JAVA</span><span class="text"
+                                                                                              style="left:12px; bottom:-5px;">100%</span>
                         </div>
-                        <div class="measurement">
-                            <h3>Project complexity</h3>
-                            <hr>
-                            <div class="complexity">
-                                <div id="progressBar-blackjack" class="progressBar"><div></div></div>
+                    </div>
+                    <div class="measurement">
+                        <h3>Project complexity</h3>
+                        <hr>
+                        <div class="complexity">
+                            <div id="progressBar-car" class="progressBar">
+                                <div></div>
                             </div>
                         </div>
-                        <button class="view-project" id="blackjack-button">View project</button>
                     </div>
+                    <button class="view-project" id="carcrash-button">View project</button>
                 </div>
-            </div>
-
-            <div class="container" id="small-zoo">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/zooCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/zoo.png">
-                        </div>
-                        <h2 class="project-title" style="color: #014e2e">Claybrook Zoo</h2>
-                        <hr>
-                        <div class="small-description">
-Aiming to redesign a new system interface for a fictive zoo, my role within the team was to establish how the new Kiosk software will give the visitors a suitable user experience.                        </div>
-    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
-                    </div>
-                    <div class="back">
-                        <h3>Tools Used</h3>
-                        <hr>
-                        <div class="languages">
-
-                            <div class="psd-zoo"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span class="text" style="left:10px; bottom:-5px;">100%</span></div>
-
-                        </div>
-                        <div class="measurement">
-                            <h3>Project complexity</h3>
-                            <hr>
-                            <div class="complexity">
-                                <div id="progressBar-zoo" class="progressBar"><div></div></div>
-                            </div>
-                        </div>
-                        <button class="view-project" id="zoo-button">View project</button>
-                    </div>
-                </div>
-
-
-            </div>
-
-            <div class="container" id="small-helmdon">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/helmdonCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/helm.png">
-                        </div>
-                        <h2 class="project-title" style="color: #33691E">Helmdon Parish Council</h2>
-                        <hr>
-                        <div class="small-description" style="margin-top: 15px;">
-The group project consists in re-designing an outdated website for a local parish council, as the administrators update the content almost daily, a CMS (WordPress) was used to create a website that can be passed to a non-technical person.                        </div>
-    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
-                    </div>
-                    <div class="back">
-
-                        <h3>Group Members</h3>
-                        <hr>
-                        <div class="team">
-                            <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank" title="Andrei's Linkedin">
-                                <img src="images/andrei.jpg">
-                                <span class="tooltiptext">ANDREI</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank" title="Simone's Linkedin">
-                                <img src="images/simone.jpg">
-                                <span class="tooltiptext">SIMONE</span>
-                            </a>
-                            <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank" title="Marcus's Linkedin">
-                                <img src="images/marcus.jpg">
-                                <span class="tooltiptext">MARCUS</span>
-                            </a>
-                        </div>
-
-                        <h3>Tools Used</h3>
-                        <hr>
-                        <div class="languages">
-
-                            <div class="wordpress-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">WORDPRESS</span><span class="text">90%</span></div>
-                            <div class="psd-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span class="text">6%</span></div>
-                            <div class="ai-helmdon"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span class="text">4%</span></div>
-
-                        </div>
-
-
-                        <button class="view-project" id="helmdon-button">View project</button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container" id="vle">
-                <div class="flip">
-                    <div class="front">
-                        <div class="cover">
-                            <img src="images/vleCover.png">
-                        </div>
-                        <div class="iconCover">
-                            <img src="images/vleIcon.png">
-                        </div>
-                        <h2 class="project-title" style="color: #455a64">VLE</h2>
-                        <hr>
-                        <div class="small-description">
-Virtual Learning Environment (VLE) it’s a prototype created in Justinmind Prototyper with the scope of delivering a vision on how students will interact with online digital courseware in the future.                        </div>
-    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to flip</div>
-                    </div>
-                    <div class="back">
-                      <h3>Group Members</h3>
-                      <hr>
-                      <div class="team">
-                          <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank" title="Andrei's Linkedin">
-                              <img src="images/andrei.jpg">
-                              <span class="tooltiptext">ANDREI</span>
-                          </a>
-                          <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank" title="Simone's Linkedin">
-                              <img src="images/simone.jpg">
-                              <span class="tooltiptext">SIMONE</span>
-                          </a>
-                          <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank" title="Marcus's Linkedin">
-                              <img src="images/marcus.jpg">
-                              <span class="tooltiptext">MARCUS</span>
-                          </a>
-                      </div>
-
-                      <h3>Tools Used</h3>
-                      <hr>
-                      <div class="languages">
-
-                          <div class="justinmind-vle"><span class="tooltiptext" style="width:140px; margin-left: -47px; margin-top: -62px;">JUSTINMIND PROTOTYPER</span><span class="text">75%</span></div>
-                          <div class="balsamiq-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">BALSAMIQ</span><span class="text">15%</span></div>
-                          <div class="psd-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span class="text">6%</span></div>
-                          <div class="ai-vle"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span class="text">4%</span></div>
-        
-                      </div>
-
-                        <button class="view-project" id="vle-button">View project</button>
-                    </div>
-
-                </div>
-
             </div>
         </div>
-        <footer>
-            <div class="footer2">
+    </div>
 
+    <div class="main" style="margin-bottom:100px;">
 
-                <div class="component">
-                    <a href="https://twitter.com/s3bastian43" target="_blank" class="icon icon-cube twitter">twitter</a>
-                    <a href="https://github.com/s3bastian43" target="_blank" class="icon icon-cube github">github</a>
-                    <a href="https://uk.linkedin.com/in/florin-sebastian-ciobanu-10b349107" target="_blank" class="icon icon-cube linkedin">linkedin</a>
-                    <a href="https://s3bastian43.tumblr.com/" target="_blank" class="icon icon-cube tumblr">tumblr</a>
+        <div class="container" id="small-blackjack">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/blackjackCover.png">
+                    </div>
+                    <div class="iconCover">
+                        <img src="images/blackjack.png">
+                    </div>
+                    <h2 class="project-title" style="color: #1B5E20">Blackjack Game</h2>
+                    <hr>
+                    <div class="small-description">
+                        The purpose of the project was to create an interactive web page that replicates the Blackjack
+                        game (or 21), the user plays versus the dealer and has the option of placing a bet before each
+                        hand.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
                 </div>
-                <br/>
-                <h3>©2017</h3>
-            </div>
-        </footer>
+                <div class="back">
+                    <h3>Languages Used</h3>
+                    <hr>
+                    <div class="languages">
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-      
+                        <div class="html-blackjack"><span class="tooltiptext">HTML</span><span class="text">6%</span>
+                        </div>
+                        <div class="css-blackjack"><span class="tooltiptext">CSS</span><span class="text">16%</span>
+                        </div>
+                        <div class="js-blackjack"><span class="tooltiptext" style="width:100px; margin-left: -27px;">JAVASCRIPT</span><span
+                                class="text">78%</span></div>
+
+                    </div>
+                    <div class="measurement">
+                        <h3>Project complexity</h3>
+                        <hr>
+                        <div class="complexity">
+                            <div id="progressBar-blackjack" class="progressBar">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="view-project" id="blackjack-button">View project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="small-zoo">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/zooCover.png">
+                    </div>
+                    <div class="iconCover">
+                        <img src="images/zoo.png">
+                    </div>
+                    <h2 class="project-title" style="color: #014e2e">Claybrook Zoo</h2>
+                    <hr>
+                    <div class="small-description">
+                        Aiming to redesign a new system interface for a fictive zoo, my role within the team was to
+                        establish how the new Kiosk software will give the visitors a suitable user experience.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+                    <h3>Tools Used</h3>
+                    <hr>
+                    <div class="languages">
+
+                        <div class="psd-zoo"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span
+                                class="text" style="left:10px; bottom:-5px;">100%</span></div>
+
+                    </div>
+                    <div class="measurement">
+                        <h3>Project complexity</h3>
+                        <hr>
+                        <div class="complexity">
+                            <div id="progressBar-zoo" class="progressBar">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="view-project" id="zoo-button">View project</button>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class="container" id="small-helmdon">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/helmdonCover.png">
+                    </div>
+                    <div class="iconCover">
+                        <img src="images/helm.png">
+                    </div>
+                    <h2 class="project-title" style="color: #33691E">Helmdon Parish Council</h2>
+                    <hr>
+                    <div class="small-description" style="margin-top: 15px;">
+                        The group project consists in re-designing an outdated website for a local parish council, as
+                        the administrators update the content almost daily, a CMS (WordPress) was used to create a
+                        website that can be passed to a non-technical person.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+
+                    <h3>Group Members</h3>
+                    <hr>
+                    <div class="team">
+                        <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank"
+                           title="Andrei's Linkedin">
+                            <img src="images/andrei.jpg">
+                            <span class="tooltiptext">ANDREI</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank"
+                           title="Simone's Linkedin">
+                            <img src="images/simone.jpg">
+                            <span class="tooltiptext">SIMONE</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank"
+                           title="Marcus's Linkedin">
+                            <img src="images/marcus.jpg">
+                            <span class="tooltiptext">MARCUS</span>
+                        </a>
+                    </div>
+
+                    <h3>Tools Used</h3>
+                    <hr>
+                    <div class="languages">
+
+                        <div class="wordpress-helmdon"><span class="tooltiptext"
+                                                             style="width:100px; margin-left: -27px;">WORDPRESS</span><span
+                                class="text">90%</span></div>
+                        <div class="psd-helmdon"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span
+                                class="text">6%</span></div>
+                        <div class="ai-helmdon"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span
+                                class="text">4%</span></div>
+
+                    </div>
+
+
+                    <button class="view-project" id="helmdon-button">View project</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="vle">
+            <div class="flip">
+                <div class="front">
+                    <div class="cover">
+                        <img src="images/vleCover.png">
+                    </div>
+                    <div class="iconCover">
+                        <img src="images/vleIcon.png">
+                    </div>
+                    <h2 class="project-title" style="color: #455a64">VLE</h2>
+                    <hr>
+                    <div class="small-description">
+                        Virtual Learning Environment (VLE) it’s a prototype created in Justinmind Prototyper with the
+                        scope of delivering a vision on how students will interact with online digital courseware in the
+                        future.
+                    </div>
+                    <div class="touch-to-flip"><i class="fa fa-share-square-o" aria-hidden="true"></i>Please touch to
+                        flip
+                    </div>
+                </div>
+                <div class="back">
+                    <h3>Group Members</h3>
+                    <hr>
+                    <div class="team">
+                        <a href="https://www.linkedin.com/in/andrei-drimbarean-772714131/" target="_blank"
+                           title="Andrei's Linkedin">
+                            <img src="images/andrei.jpg">
+                            <span class="tooltiptext">ANDREI</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simone-lishman-aa5090131/" target="_blank"
+                           title="Simone's Linkedin">
+                            <img src="images/simone.jpg">
+                            <span class="tooltiptext">SIMONE</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/marcus-williams-271689131/" target="_blank"
+                           title="Marcus's Linkedin">
+                            <img src="images/marcus.jpg">
+                            <span class="tooltiptext">MARCUS</span>
+                        </a>
+                    </div>
+
+                    <h3>Tools Used</h3>
+                    <hr>
+                    <div class="languages">
+
+                        <div class="justinmind-vle"><span class="tooltiptext"
+                                                          style="width:140px; margin-left: -47px; margin-top: -62px;">JUSTINMIND PROTOTYPER</span><span
+                                class="text">75%</span></div>
+                        <div class="balsamiq-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">BALSAMIQ</span><span
+                                class="text">15%</span></div>
+                        <div class="psd-vle"><span class="tooltiptext" style="width:100px; margin-left: -27px;">PHOTOSHOP</span><span
+                                class="text">6%</span></div>
+                        <div class="ai-vle"><span class="tooltiptext" style="width:110px; margin-left: -33px;">ILLUSTRATOR</span><span
+                                class="text">4%</span></div>
+
+                    </div>
+
+                    <button class="view-project" id="vle-button">View project</button>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div class="footer2">
+
+
+            <div class="component">
+                <a href="https://twitter.com/s3bastian43" target="_blank" class="icon icon-cube twitter">twitter</a>
+                <a href="https://github.com/s3bastian43" target="_blank" class="icon icon-cube github">github</a>
+                <a href="https://uk.linkedin.com/in/florin-sebastian-ciobanu-10b349107" target="_blank"
+                   class="icon icon-cube linkedin">linkedin</a>
+                <a href="https://s3bastian43.tumblr.com/" target="_blank" class="icon icon-cube tumblr">tumblr</a>
+            </div>
+            <br/>
+            <h3>©2017</h3>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
     <!-- fancyBox -->
     <script type="text/javascript" src="js/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
     <script type="text/javascript" src="js/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
